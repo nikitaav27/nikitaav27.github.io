@@ -41,7 +41,7 @@ recognition.onresult = function(event) {
   // The second [0] returns the SpeechRecognitionAlternative at position 0.
   // We then return the transcript property of the SpeechRecognitionAlternative object
   var color = event.results[0][0].transcript;
-  diagnostic.textContent = 'Вы сказали: ' + color + '.';
+  diagnostic.textContent = 'Вы сказали: ' + color + '. ';
   if (color == 'система дистанционного обучения') {
     bg.style.backgroundColor = 'green';
     qqq.textContent = 'Все верно';
